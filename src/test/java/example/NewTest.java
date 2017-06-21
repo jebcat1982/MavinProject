@@ -3,7 +3,6 @@ package example;
 import org.openqa.selenium.By;		
 import org.openqa.selenium.WebDriver;		
 import org.openqa.selenium.chrome.ChromeDriver;
-	
 import org.testng.Assert;		
 import org.testng.annotations.Test;	
 import org.testng.annotations.BeforeTest;	
@@ -21,7 +20,8 @@ public class NewTest {
 		public void testEasy() {	
 			driver.get("http://newtours.demoaut.com/");  
 			String title = driver.getTitle();				 
-			Assert.assertTrue(title.contains("Welcome: Mercury Tours")); 		
+			Assert.assertTrue(title.contains("Welcome: Mercury Tours")); 
+			System.out.println("Welcome to Selenium");
 		}
 		
 		@AfterTest
